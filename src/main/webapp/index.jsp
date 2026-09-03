@@ -70,7 +70,7 @@ footer{background:#060606;border-top:1px solid #1a1a1a;padding:60px 40px 30px;di
 </head>
 <body>
 <nav>
-  <div class="logo">LUX</div>
+  <div class="logo">LUX Store</div>
   <ul class="nav-links">
     <li><a href="#">Home</a></li>
     <li><a href="#">Shop</a></li>
