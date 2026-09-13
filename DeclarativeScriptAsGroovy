@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Build') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                script {
+                    def deploy = true
+
+                    if (deploy) {
+                        sh './deploy.sh'
+                    } else {
+                        echo 'Skipping deployment'
+                    }
+                }
+            }
+        }
+    }
+}
+//declarative pipeline lo groovy use cheyyalante script block lo rayali
