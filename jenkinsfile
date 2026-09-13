@@ -1,8 +1,11 @@
 pipeline {
     agent any
 
-    stages {
+    tools {
+        mvn 'build'
+    }
 
+    stages {
         stage('Code') {
             steps {
                 echo 'Checking out source code'
