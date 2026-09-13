@@ -25,3 +25,21 @@ pipeline {
     }
 }
 //declarative pipeline lo groovy use cheyyalante script block lo rayali
+
+
+//actual scripted pipeline - uses groovy script
+//node {
+//    stage('Build') {
+//        sh 'mvn clean package'
+//    }
+
+//  stage('Deploy') {
+  //      def deploy = true
+
+    //    if (deploy) {
+      //      sh './deploy.sh'
+        //} else {
+          //  echo 'Skipping deployment'
+        //}
+    //}
+//}
